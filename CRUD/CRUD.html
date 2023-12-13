@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Employee Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Crud.css">
+</head>
+<body>
+  <div class="navbar">
+    Employee Details
+  </div>
+  <div class="mainbox">
+    <div class="data">
+      <table class="list" id="employeeList">
+        <thead>
+            <tr class="table" bgcolor="grey">
+                <th width="180">Name</th>
+                <th width="180">Email Id</th>
+                <th width="150">Phone No</th>
+                <th width="150">Address</th>
+                <th width="175">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="table">
+
+        </tbody>
+    </table>
+    </div>
+    <div class="input">
+      <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <div>
+            <label>Name *</label><label class="validation-error hide" id="NameValidation"></label>
+            <input class="inputbar" type="text" name="Name" id="Name">
+        </div>
+        <div>
+            <label>Email Id</label>
+            <input class="inputbar" type="text" name="email" id="email">
+        </div>
+        <div>
+            <label>Phone No</label>
+            <input class="inputbar" type="number" name="phone" id="phone">
+        </div>
+        <div>
+            <label>Address</label>
+            <input  class="inputbar" type="text" name="add" id="add">
+        </div>
+        <div  class="form-action-buttons">
+            <input type="submit" value="Submit" class="submitbutton">
+        </div>
+    </form>
+    </div>
+  </div>
+  <script src="scri.js"></script>
+</body>
+</html>
